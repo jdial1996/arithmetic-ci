@@ -1,0 +1,27 @@
+language: python
+python:
+  - "3.7.2"
+
+before_install:
+ - python --version
+ - pip install -U pip
+
+install:
+ - pip install -U pip
+ - pip install -U pytest
+ - pip install -U black
+ - pip install -U flake8
+
+script:
+  - pytest
+  - black
+  - flake8
+
+after_success:
+ - echo "Build successful.
+
+after_failure:
+ - echo "Build unsuccesful.  Check tests."
+
+
+
