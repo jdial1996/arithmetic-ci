@@ -14,6 +14,3 @@ class Arithmetic:
 
     def division(self):
         return self.num1 / self.num2
-
-
-

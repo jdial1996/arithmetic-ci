@@ -1,5 +1,5 @@
 import pytest
-from arithmetic import Arithmetic
+from src.arithmetic import Arithmetic
 
 test_object = Arithmetic(4, 3)
 
