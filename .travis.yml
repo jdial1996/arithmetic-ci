@@ -15,8 +15,8 @@ install:
 
 script:
   - pytest --cov
-  - black
-  - flake8
+  - black .
+  - flake8 . 
 
 after_success:
  - echo "Build successful.
