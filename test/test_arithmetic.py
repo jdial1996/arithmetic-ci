@@ -1,4 +1,3 @@
-import pytest
 from src.arithmetic import Arithmetic
 
 test_object = Arithmetic(4, 3)
