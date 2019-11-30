@@ -9,11 +9,12 @@ before_install:
 install:
  - pip install -U pip
  - pip install -U pytest
+ - pip install -U pytest-cov
  - pip install -U black
  - pip install -U flake8
 
 script:
-  - pytest
+  - pytest --cov
   - black
   - flake8
 
