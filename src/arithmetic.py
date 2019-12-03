@@ -3,7 +3,7 @@ class Arithmetic:
         self.num1 = num1
         self.num2 = num2
 
-    def addition(self):
+    def add(self):
         return self.num1 + self.num2
 
     def subtraction(self):
