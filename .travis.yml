@@ -1,20 +1,21 @@
+# specifying the runtime language and version
 language: python
 python:
   - "3.7.2"
-
+#caching pip to cache dependencies to speed up the CI process
 cache: pip
-
+#setting up prerequisites for the CI process
 before_install:
  - python --version
  - pip install -U pip
-
+#Installing the dependencies required for testing
 install:
  - pip install -U pip
  - pip install -U pytest
  - pip install -U pytest-cov
  - pip install -U black
  - pip install -U flake8
-
+#Running commands to test the code using test_arithmetic
 script:
   - pytest --cov
   - black .
@@ -25,6 +26,8 @@ after_success:
 
 after_failure:
  - echo "Build unsuccesful.  Check tests."
+
+
 
 
 

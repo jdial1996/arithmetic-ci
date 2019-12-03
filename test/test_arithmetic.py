@@ -8,7 +8,7 @@ def test_initial_values():
     assert test_object.num2 == 3
 
 
-def test_add():
+def test_addition():
     assert test_object.add() == 7
 
 
